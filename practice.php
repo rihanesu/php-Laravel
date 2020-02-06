@@ -1,38 +1,31 @@
 <?php
-// 課題１
-$a = 3;
-$b = 7;
-echo $a + $b;
+//課題１
+$name = kazushi;
+if ($name == kazushi) {
+  echo "私は あなたの名前です";
+} else {
+  echo "あなたの名前ではありません";
+}
 
-// 課題２
-$array_month = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+//課題２
+for ($i = 0; $i <= 10000; $i++) {
+    $total += $i;
+}
+echo $total;
 
-echo $array_month[7];
+//課題３
+$fruits = ["orage","apple","banana","grape","blueberry"];
+foreach ($fruits as $fruit) {
+    echo $fruit;
+    echo "\n";
+}
 
-// 課題３
-$hello = "Hello,";
-$name = "kazushi";
-$world = "'s World!";
-echo $hello.$name.$world;
-
-// 課題４
-$tech_boost = "tech";
-$tech_boost .=" boost";
-echo $tech_boost;
-
-// 課題５
-$calendar_2018 = [                  //数字が変数の始まりになっている
-    "January" => "1月",             // {} → []
-    "February" => "2月",            //10月に""が無い
-    "March" => "3月",               //要素の取り出しに""が無い
-    "April" => "4月",
-    "May" => "5月",
-    "June" => "6月",
-    "Jury" => "7月",
-    "August" => "8月",
-    "September" => "9月",
-    "October" => "10月",
-    "November" => "11月",
-    "December" => "12月"
-];
-echo $calendar_2018["December"];
+//課題４
+$start = 1;
+$end = 100;
+for($i = $start; $i <= $end; $i++) {    // < → <=
+    if ($i % 5 == 0) {                  // 改行のため"\n"をecho
+        echo $i;
+        echo "\n";
+    }
+}
